@@ -1,0 +1,5 @@
+$VAR1 = {
+          'to_upgrade' => [],
+          'timestamp' => 1625713175,
+          'method' => 'CPAN'
+        };
