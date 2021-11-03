@@ -53,7 +53,7 @@ sub run {
   die "ERROR: cannot detect perl-src dir" unless $perlsrc;
  
   #get verion string - e.g. '5.15.9'
-  my ($version) = grep { /INST_VER/ } read_file(catfile($unpack_to, $perlsrc, qw/win32 makefile.mk/));
+  my ($version) = grep { /INST_VER/ } read_file(catfile($unpack_to, $perlsrc, qw/win32 Makefile/));
   $version =~ s/^.*?(5\..*?)[\r\n]*$/$1/;
 
   # some handy variables
